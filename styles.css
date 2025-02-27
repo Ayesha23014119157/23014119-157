@@ -1,0 +1,177 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f848;
+}
+
+/* Navigation Bar */
+nav {
+    background: #333;
+    padding: 15px 0;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    background: white;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h2 {
+    font-size: 72px;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 20px;
+}
+
+.shop-now-btn {
+    background: black;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.shop-now-btn:hover {
+    background: white;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Categories Section */
+.categories {
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: -50px;
+}
+
+.categories a{
+    text-decoration: none;
+}
+.category-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.category-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.category-card:hover {
+    transform: scale(1.05);
+}
+
+.men { 
+    background: #3695e9; 
+    color: white; 
+}
+
+.women { 
+    background: #d63384; 
+    color: white; 
+}
+.kids { 
+    background: #ff9800; 
+    color: white; 
+}
+
+/* Featured Collection */
+.featured {
+    background-color: #ff9800;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #e6f848;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    transition: 0.3s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
