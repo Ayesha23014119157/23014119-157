@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Jewelry & Watches Shop</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="text-2xl font-bold">J&W Shop</div>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="IndexTailwind.html" class="hover:text-yellow-400">Homepage</a></li>
+          <li><a href="IndexTailwind.html#new-arrivals" class="hover:text-yellow-400">New Arrivals</a></li>
+          <li><a href="IndexTailwind.html#category" class="hover:text-yellow-400">Category</a></li>
+          <li><a href="registerTailwind.html" class="hover:text-yellow-400">Register</a></li>
+          <li><a href="cartTailwind.html" class="hover:text-yellow-400">Cart</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Login Form -->
+  <section class="flex items-center justify-center min-h-screen bg-gray-100">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+      <h2 class="text-2xl font-semibold mb-6 text-center">Login to Your Account</h2>
+      <form action="#" method="POST" class="space-y-4">
+        
+        <input type="email" placeholder="Email" required class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+
+        <!-- Password Field -->
+        <input type="password" placeholder="Password" required id="loginPassword" class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+        
+        <!-- Show Password Toggle -->
+        <div class="flex items-center mt-1">
+          <input type="checkbox" id="toggleLoginPassword" class="mr-2">
+          <label for="toggleLoginPassword" class="text-sm text-gray-600">Show Password</label>
+        </div>
+
+        <button type="submit" class="w-full bg-yellow-400 hover:bg-yellow-500 text-black font-semibold py-2 rounded-md transition duration-300">Login</button>
+
+        <p class="text-sm text-center">
+          Don't have an account? <a href="register.html" class="text-yellow-600 hover:underline">Sign up</a>
+        </p>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>© 2025 Jewelry & Watches Shop. All Rights Reserved.</p>
+      <div class="mt-2">
+        <a href="#" class="text-yellow-400 hover:underline mx-2">Facebook</a>
+        <a href="#" class="text-yellow-400 hover:underline mx-2">Instagram</a>
+        <a href="#" class="text-yellow-400 hover:underline mx-2">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Password Toggle Script -->
+  <script>
+    function setupPasswordToggle(passwordInputId, toggleCheckboxId) {
+      const passwordInput = document.getElementById(passwordInputId);
+      const toggleCheckbox = document.getElementById(toggleCheckboxId);
+
+      if (passwordInput && toggleCheckbox) {
+        toggleCheckbox.addEventListener('change', function() {
+          passwordInput.type = this.checked ? 'text' : 'password';
+        });
+      }
+    }
+
+    // Initialize login password toggle
+    setupPasswordToggle('loginPassword', 'toggleLoginPassword');
+  </script>
+
+</body>
+</html>
